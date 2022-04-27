@@ -26,7 +26,7 @@ const EditMovieForm = (props) => {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies/" + id)
+      .get("http://localhost:9000/api/movies/" + id)
       .then((res) => {
         console.log(res.data);
         setMovie(res.data);
